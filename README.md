@@ -1,1 +1,0 @@
-# MrNtex.github.io
