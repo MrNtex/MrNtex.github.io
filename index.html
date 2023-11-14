@@ -8,23 +8,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <img src="img\LOGOVER1.png" alt="Artur Niemiec Industries Logo" id="logo">
-        <nav class="TopNavBar">
-            <ul>
-                <li><a href="https://www.youtube.com/c/MrNtex" target="_blank">YouTube</a></li>
-                <li><a href="https://github.com/MrNtex" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/artur-niemiec/" target="_blank">LinkedIn</a></li>
-                <!-- Add more social media links as needed -->
-            </ul>
-        </nav>
-        
-        <h1 id="MainTitle">Artur Niemiec Industries</h1>
-        <h3 id="SubTitle"> ANI </h3>
+        <img id="Logo" src="img/LogoBlack.png"></img>
+        <div class="TitleDiv">
+            <h1 id="MainTitle">Artur Niemiec Industries</h1>
+            <p id="SubTitle">Lorem Ipsum</p>
+        </div>
     </header>
+    <div id="YouTube">
+        <h1 style="text-align: center;">YouTube</h1>
+        <p id="ChannelDesc">CodeForge is my ode to the global programming community. Through this YouTube channel, I share Unity tutorials, developer journeys, and insights that resonate with every coder. As I envision its future, I see a comprehensive platform offering courses, one-on-one lessons, contests, game jams, and more - a haven for new and intermediate programmers.</p>
+    </div>
+
+    <div class="BasicContainer">
+        <h1>Learning Comunity</h1>
+        <p id="SubTitle">Coming soon...</p>
+    </div>
+
+    <div class="BasicContainer">
+        <h1>Apps</h1>
+        <div id="Apps">
+            <div class="ProjectContainer">
+                <h2>GravAssist</h2>
+                <p style="text-align: center;">GravAssist is a game where you have to get to the end of the level by using gravity to your advantage.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.ArturNiemiec.GravAssist"><img class="ProjectsIcons" src="img/GravAssistIcon.png"></a>
+            </div>
+            <div class="ProjectContainer">
+                <h2>Portal Chess</h2>
+                <p style="text-align: center;">GravAssist is a game where you have to get to the end of the level by using gravity to your advantage.</p>
+                <a href="https://mrntex.github.io/GravAssist/"><img class="ProjectsIcons" src="img/PortalChessIcon.png"></a>
+            </div>
+        </div>
+        
+
+        </div>
+    </div>
     
     <script src="script.js"></script>
+    <footer>
+        <div class="social-media-buttons">
+            <a href="https://facebook.com" class="social-button facebook">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://twitter.com" class="social-button twitter">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://instagram.com" class="social-button instagram">
+                <i class="fa-brands fa-google-play"></i>
+            </a>
+            <!-- Add more social media buttons as needed -->
+        </div>
+    </footer>
+    
 </body>
 </html>
