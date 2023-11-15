@@ -61,15 +61,22 @@ h1{
     background-repeat: no-repeat;
 }
 #ChannelDesc{
-    padding-left: 4%;
+    padding-left: 6%;
     width: 30%;
     color: white;
     font-size: 20px;
-    font-family: 'Catamaran', sans-serif
+    font-family: 'Catamaran', sans-serif;
 }
 .ProjectsIcons{
     height: 200px;
     width: auto;
+}
+#ProjectDesc{
+    text-align: center;
+    color: rgb(204, 204, 204);
+    font-size: 20px;
+    font-family: 'Catamaran', sans-serif;
+
 }
 .BasicContainer{
     padding-top: 50px;
