@@ -78,6 +78,36 @@ h1{
     font-family: 'Catamaran', sans-serif;
 
 }
+.scroller{
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+    overflow: hidden;
+    width: 10em;
+}
+.scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 8s infinite;
+    font-weight: bold;
+    color: wheat;
+    font-size: 24px;
+    padding-bottom: 3px;
+  }
+  @keyframes slide {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -29px;
+    }
+    50% {
+      top: -55px;
+    }
+    75% {
+      top: -79px;
+    }
+  }
 .BasicContainer{
     padding-top: 50px;
     display: flex; /* This makes it a flex container */
