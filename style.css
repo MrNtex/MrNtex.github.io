@@ -96,17 +96,21 @@ h1{
   }
   @keyframes slide {
     0% {
-      top: 0;
+      transform: translateY(0%);
     }
     25% {
-      top: -29px;
+      transform: translateY(-20%);
     }
     50% {
-      top: -55px;
+      transform: translateY(-40%);
     }
     75% {
-      top: -79px;
+      transform: translateY(-60%);
     }
+    100%{
+        transform: translateY(-80%);
+    }
+
   }
 .BasicContainer{
     padding-top: 50px;
