@@ -43,7 +43,7 @@ h1{
     font-family: 'Merriweather', serif;
 }
 #Divider{
-    padding-bottom: 5%;
+    padding-bottom: 1%;
     width: 90%;
     border-top: 3px solid aliceblue;
     margin-left: auto;
@@ -58,6 +58,18 @@ h1{
 #YouTube{
     height: 350px;
     background-image: linear-gradient(to right, black 50%, transparent 90%), url('img/CodeForgeLogo.png');
+    background-position: 0px, 120% 50%;
+    background-size: auto, 60%;
+
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.GitHub{
+    height: 350px;
+    background-image: linear-gradient(to right, black 50%, transparent 90%), url('img/GitHubBG.png');
     background-position: 0px, 120% 50%;
     background-size: auto, 60%;
 
@@ -120,7 +132,7 @@ h1{
 
   }
 .BasicContainer{
-    padding-top: 50px;
+    padding-top: 5%;
     display: flex; /* This makes it a flex container */
     flex-direction: column; /* This makes it so the items are stacked vertically */
     justify-content: center; /* This centers the content horizontally */
@@ -212,8 +224,13 @@ footer {
     font-size: 24px; /* Icon size */
     text-decoration: none; /* Remove underline from links */
 }
-
+.social-button-github {
+    color: white; /* Button text/icon color */
+    margin: 0 10px; /* Spacing between buttons */
+    font-size: 128px; /* Icon size */
+    text-decoration: none; /* Remove underline from links */
+}
 /* Specific styles for different social media buttons (optional) */
-.facebook:hover { color: white; }
+.social-button-github:hover { color: #6530e1; font-size: 128px; }
 .twitter:hover { color: #f21d1d; }
 .instagram:hover { color: #6530e1; }
