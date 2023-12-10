@@ -231,6 +231,6 @@ footer {
     text-decoration: none; /* Remove underline from links */
 }
 /* Specific styles for different social media buttons (optional) */
-.social-button-github:hover { color: #6530e1; font-size: 128px; }
-.twitter:hover { color: #f21d1d; }
-.instagram:hover { color: #6530e1; }
+.google-play:hover { color: #ffc403; }
+.twitter:hover { color: #202020; }
+.linkedin:hover { color: #0073b2; }
