@@ -146,6 +146,10 @@ h1{
     justify-content: center; /* This centers the content horizontally */
     align-items: center; /* This centers the content vertically */
 }
+.ProjectContainer:hover{
+    background-color: rgba(68, 58, 78, 0.418);
+    border-radius: 5%;
+}
 .TitleDiv{
     padding-top: -10%;
     padding-left: -10%;
@@ -229,6 +233,9 @@ footer {
     margin: 0 10px; /* Spacing between buttons */
     font-size: 128px; /* Icon size */
     text-decoration: none; /* Remove underline from links */
+}
+.social-button-github:hover{
+    color:rgb(99, 24, 168);
 }
 /* Specific styles for different social media buttons (optional) */
 .google-play:hover { color: #ffc403; }
