@@ -79,6 +79,12 @@ h1{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+.project-list {
+    list-style-type: none; /* Removes the default list styling */
+    padding: 0;
+}
+
+
 #ChannelDesc{
     padding-left: 6%;
     width: 30%;
@@ -145,6 +151,8 @@ h1{
     flex-direction: column; /* This makes it so the items are stacked vertically */
     justify-content: center; /* This centers the content horizontally */
     align-items: center; /* This centers the content vertically */
+    background-color: rgba(68, 58, 78, 0);
+    transition: background-color 1s ease, border-radius 1s ease;
 }
 .ProjectContainer:hover{
     background-color: rgba(68, 58, 78, 0.418);
@@ -233,6 +241,7 @@ footer {
     margin: 0 10px; /* Spacing between buttons */
     font-size: 128px; /* Icon size */
     text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease;
 }
 .social-button-github:hover{
     color:rgb(99, 24, 168);
