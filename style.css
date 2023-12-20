@@ -50,10 +50,15 @@ h1{
     margin-right: auto;
 }
 #Apps{
+
     display: flex; /* This makes it a flex container */
     justify-content: space-evenly; /* This centers the content horizontally */
     width: 80%;
     padding-bottom: 10%;
+}
+#Apps a, #Apps a:visited, #Apps a:hover, #Apps a:active {
+    text-decoration: none !important;
+    color: inherit; /* Optional: to maintain the original text color */
 }
 #YouTube{
     height: 350px;
