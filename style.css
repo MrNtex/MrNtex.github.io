@@ -259,19 +259,24 @@ footer {
 
 @media screen and (max-width: 600px) {
     header {
-        padding-bottom: 30px;
+        padding-bottom: 30%;
         padding-top: 30px;
-        /* Other styles unchanged */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #Logo {
-        margin-top: -100px;
-        width: 80%;
-        height: auto; /* Adjust for mobile */
+        position: static; /* Remove negative margins and position flex */
+        margin-top: -3%;
+        padding-left: 0;
+        width: 40%; /* Adjust the size for mobile */
+        height: auto;
     }
 
     #MainTitle, #SubTitle {
-        font-size: 30px; /* Smaller font size for mobile */
+        text-align: center; /* Center the text */
+        padding: 0; /* Remove any negative padding */
     }
 
     #SubTitle {
@@ -286,6 +291,7 @@ footer {
 
     #Apps {
         flex-direction: column; /* Stack elements vertically */
+        align-items: center;
         width: 100%;
     }
 
@@ -293,9 +299,20 @@ footer {
         height: auto; /* Adjust for mobile */
         background-size: cover; /* Cover the entire element */
         background-attachment: scroll; /* Disable fixed background */
+        text-align: center;
+    }
+    #YouTube{
+        background-image: linear-gradient(to right, black 10%, rgba(0, 0, 0, 0.486) 90%), url('img/CodeForgeLogo.png');
+    }
+    .GitHub{
+        background-image: linear-gradient(to right, black 50%, transparent 90%), url('img/GitHubBG.png');
     }
 
-    #ChannelDesc, #ProjectDesc {
+    #ChannelDesc {
+        font-size: 16px; /* Slightly smaller font size */
+        width: 90%; /* Increase width for mobile */
+    }
+    #ProjectDesc{
         width: 90%; /* Increase width for mobile */
         font-size: 18px; /* Slightly smaller font size */
     }
@@ -304,8 +321,12 @@ footer {
         height: 150px; /* Adjust size for mobile */
     }
 
-    .BasicContainer, .ProjectContainer {
+    .ProjectContainer {
         width: 90%; /* Increase width for mobile */
+        
+    }
+    .BasicContainer{
+        width: 100%;
     }
 
     .TitleDiv {
