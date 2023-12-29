@@ -264,6 +264,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: auto;
     }
 
     #Logo {
@@ -273,12 +274,18 @@ footer {
         width: 40%; /* Adjust the size for mobile */
         height: auto;
     }
-
+    #MainTitle{
+        font-size: 30px;
+        margin-right: 3%;
+    }
     #MainTitle, #SubTitle {
         text-align: center; /* Center the text */
         padding: 0; /* Remove any negative padding */
     }
-
+    .TitleDiv{
+        align-content: center;
+        justify-content: center;
+    }
     #SubTitle {
         padding-top: 0;
         padding-left: 0;
