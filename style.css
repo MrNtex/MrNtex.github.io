@@ -100,6 +100,7 @@ h1{
 .ProjectsIcons{
     height: 200px;
     width: auto;
+    padding-bottom: 5%;
 }
 #ProjectDesc{
     text-align: center;
@@ -255,3 +256,77 @@ footer {
 .google-play:hover { color: #ffc403; }
 .twitter:hover { color: #202020; }
 .linkedin:hover { color: #0073b2; }
+
+@media screen and (max-width: 600px) {
+    header {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        /* Other styles unchanged */
+    }
+
+    #Logo {
+        margin-top: -100px;
+        width: 80%;
+        height: auto; /* Adjust for mobile */
+    }
+
+    #MainTitle, #SubTitle {
+        font-size: 30px; /* Smaller font size for mobile */
+    }
+
+    #SubTitle {
+        padding-top: 0;
+        padding-left: 0;
+        font-size: 15px; /* Even smaller font for subtitle */
+    }
+
+    #Divider {
+        width: 100%;
+    }
+
+    #Apps {
+        flex-direction: column; /* Stack elements vertically */
+        width: 100%;
+    }
+
+    #YouTube, .GitHub {
+        height: auto; /* Adjust for mobile */
+        background-size: cover; /* Cover the entire element */
+        background-attachment: scroll; /* Disable fixed background */
+    }
+
+    #ChannelDesc, #ProjectDesc {
+        width: 90%; /* Increase width for mobile */
+        font-size: 18px; /* Slightly smaller font size */
+    }
+
+    .ProjectsIcons {
+        height: 150px; /* Adjust size for mobile */
+    }
+
+    .BasicContainer, .ProjectContainer {
+        width: 90%; /* Increase width for mobile */
+    }
+
+    .TitleDiv {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        text-align: center; /* Center align items */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    nav ul li::after {
+        display: none; /* Hide dividers in mobile view */
+    }
+
+    .social-button-github {
+        font-size: 64px; /* Smaller icon size for mobile */
+    }
+}
