@@ -159,6 +159,26 @@ h1{
     align-items: center; /* This centers the content vertically */
     background-color: rgba(68, 58, 78, 0);
     transition: background-color 1s ease, border-radius 1s ease;
+
+    opacity: 0;
+    /* animation: PCslide 1.8s cubic-bezier(.19,.89,.58,.98); */
+}
+.ProjectContainer.animate {
+    animation: PCslide 2.4s cubic-bezier(0,.59,.21,1.04) forwards;
+}
+@keyframes PCslide {
+    0%{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        
+    }
 }
 .ProjectContainer:hover{
     background-color: rgba(68, 58, 78, 0.418);
