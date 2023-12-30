@@ -293,7 +293,7 @@ footer {
     }
 
     #Divider {
-        width: 100%;
+        width: 95%;
     }
 
     #Apps {
@@ -310,6 +310,9 @@ footer {
     }
     #YouTube{
         background-image: linear-gradient(to right, black 10%, rgba(0, 0, 0, 0.486) 90%), url('img/CodeForgeLogo.png');
+    }
+    #YouTube > h1{
+        padding-top: 4%;
     }
     .GitHub{
         background-image: linear-gradient(to right, black 50%, transparent 90%), url('img/GitHubBG.png');
