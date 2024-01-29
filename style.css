@@ -160,6 +160,26 @@ h1{
     align-items: center; /* This centers the content vertically */
     background-color: rgba(68, 58, 78, 0);
     transition: background-color 1s ease, border-radius 1s ease;
+
+    opacity: 0;
+    /* animation: PCslide 1.8s cubic-bezier(.19,.89,.58,.98); */
+}
+.ProjectContainer.animate {
+    animation: PCslide 2.4s cubic-bezier(0,.59,.21,1.04) forwards;
+}
+@keyframes PCslide {
+    0%{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+        
+    }
 }
 .ProjectContainer:hover{
     background-color: rgba(68, 58, 78, 0.418);
@@ -257,3 +277,108 @@ footer {
 .google-play:hover { color: #ffc403; }
 .twitter:hover { color: #202020; }
 .linkedin:hover { color: #0073b2; }
+
+@media screen and (max-width: 600px) {
+    header {
+        padding-bottom: 30%;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    #Logo {
+        position: static; /* Remove negative margins and position flex */
+        margin-top: -3%;
+        padding-left: 0;
+        width: 40%; /* Adjust the size for mobile */
+        height: auto;
+    }
+    #MainTitle{
+        font-size: 30px;
+        margin-right: 3%;
+    }
+    #MainTitle, #SubTitle {
+        text-align: center; /* Center the text */
+        padding: 0; /* Remove any negative padding */
+    }
+    .TitleDiv{
+        align-content: center;
+        justify-content: center;
+    }
+    #SubTitle {
+        padding-top: 0;
+        padding-left: 0;
+        font-size: 15px; /* Even smaller font for subtitle */
+    }
+
+    #Divider {
+        width: 95%;
+    }
+
+    #Apps {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        width: 100%;
+    }
+
+    #YouTube, .GitHub {
+        height: auto; /* Adjust for mobile */
+        background-size: cover; /* Cover the entire element */
+        background-attachment: scroll; /* Disable fixed background */
+        text-align: center;
+    }
+    #YouTube{
+        background-image: linear-gradient(to right, black 10%, rgba(0, 0, 0, 0.486) 90%), url('img/CodeForgeLogo.png');
+    }
+    #YouTube > h1{
+        padding-top: 4%;
+    }
+    .GitHub{
+        background-image: linear-gradient(to right, black 50%, transparent 90%), url('img/GitHubBG.png');
+    }
+
+    #ChannelDesc {
+        font-size: 16px; /* Slightly smaller font size */
+        width: 90%; /* Increase width for mobile */
+    }
+    #ProjectDesc{
+        width: 90%; /* Increase width for mobile */
+        font-size: 18px; /* Slightly smaller font size */
+    }
+
+    .ProjectsIcons {
+        height: 150px; /* Adjust size for mobile */
+    }
+
+    .ProjectContainer {
+        width: 90%; /* Increase width for mobile */
+        
+    }
+    .BasicContainer{
+        width: 100%;
+    }
+
+    .TitleDiv {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        text-align: center; /* Center align items */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    nav ul li::after {
+        display: none; /* Hide dividers in mobile view */
+    }
+
+    .social-button-github {
+        font-size: 64px; /* Smaller icon size for mobile */
+    }
+}
